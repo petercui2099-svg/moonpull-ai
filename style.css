@@ -40,16 +40,22 @@
  .mp-hero h1 {font-size:39px;letter-spacing:-.5px;}
  .mp-hero p.mp-title-cn {font-size:17px;letter-spacing:10px;margin-top:14px;}
 }
-/* 强制深色输入框 */
+/* 强制深色输入框 - 加强版 */
 [data-testid="stChatInput"] {
     background: #0a0e1a !important;
+    border: 1px solid #2a3450 !important;
 }
+[data-testid="stChatInput"] > div,
+[data-testid="stChatInput"] div,
 [data-testid="stChatInput"] textarea {
     background: #0a0e1a !important;
     color: #e8eef9 !important;
-    border: 1px solid #2a3450 !important;
+    border: none !important;
 }
 [data-testid="stChatInput"] button {
     background: #1a2340 !important;
     color: #a0b4d0 !important;
+}
+[data-testid="stBottomBlockContainer"] {
+    background: transparent !important;
 }
