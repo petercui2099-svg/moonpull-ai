@@ -113,10 +113,9 @@ def generate_pdf(text):
     return buffer.getvalue()
 
 
-
 def render_theme():
-   background = base64.b64encode((ROOT / "deep-space.png").read_bytes()).decode("ascii")
-css = (ROOT / "style.css").read_text(encoding="utf-8")
+    background = base64.b64encode((ROOT / "deep-space.png").read_bytes()).decode("ascii")
+    css = (ROOT / "style.css").read_text(encoding="utf-8")
     st.markdown(
         '<style>:root{--moonpull-space:url("data:image/png;base64,'
         + background + '");}' + css + '</style>', unsafe_allow_html=True,
