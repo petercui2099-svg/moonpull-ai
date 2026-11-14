@@ -1,0 +1,42 @@
+/* Moonpull AI · 月之引力 — approved deep-space edition */
+[data-testid="stApp"] {
+ background-color:#03060b; background-image:var(--moonpull-space);
+ background-size:cover; background-position:center; background-attachment:fixed;
+}
+[data-testid="stAppViewContainer"], [data-testid="stHeader"], [data-testid="stBottom"], [data-testid="stBottomBlockContainer"] {background:transparent !important;}
+[data-testid="stToolbar"], [data-testid="stDecoration"], #MainMenu, footer {display:none;}
+[data-testid="stMainBlockContainer"] {max-width:1100px; padding:2.25rem 2.5rem 7rem;}
+[data-testid="stVerticalBlock"] {gap:1rem;}
+[data-testid="stBottomBlockContainer"] {max-width:1040px; padding:.8rem 1.5rem 1.5rem;}
+[data-testid="stChatInput"] {
+ border:1px solid #97bce56b; border-radius:22px; background:#0d1420d9;
+ box-shadow:0 0 30px #758fc30a, inset 0 1px 0 #dce5ff09;
+ backdrop-filter:blur(16px); padding:10px 12px 10px 18px;
+}
+[data-testid="stChatInput"]:focus-within {border-color:#a3c3ef;box-shadow:0 0 28px #8098df1a;}
+[data-testid="stChatInput"] textarea {color:#e4eafa;font-size:15px;}
+[data-testid="stChatInput"] textarea::placeholder {color:transparent;opacity:0;}
+[data-testid="stChatInputSubmitButton"] {border-radius:50%;color:#d1ddfc;background:#b5c8ff14;}
+.mp-brand {display:flex;align-items:center;gap:12px;height:44px;color:#f0f3fd;font-size:17px;font-weight:500;}
+.mp-mark {display:inline-block;height:22px;width:22px;border-radius:50%;background:linear-gradient(140deg,#f0f2ff,#849ac9);box-shadow:inset -7px -1px 0 2px #090f1b,0 0 20px #a0b8ff15;}
+.mp-hero {text-align:center;margin:22vh auto 0;position:relative;}
+.mp-hero h1 {font-size:52px;font-weight:450;line-height:1.25;letter-spacing:-1px;padding:0;color:#edf3ff;text-shadow:0 0 40px #c3d4ff13;}
+.mp-hero p.mp-title-cn {font-size:21px;font-weight:350;letter-spacing:12px;color:#c3d0e7;margin:14px 0 0 12px;}
+[data-testid="stPopover"] button {background:#0b111dc2;border-color:#9baedc40;border-radius:18px;color:#c8d3e8;}
+[data-testid="stPopoverBody"] {background:#101522;border:1px solid #abc4ff35;}
+[data-testid="stPopoverBody"] h3 {font-size:19px;}
+[data-testid="stChatMessage"] {border-radius:17px;background:#0d1523d9;border:1px solid #b2c6ff12;backdrop-filter:blur(12px);}
+[data-testid="stChatMessage"] p {line-height:1.9;}
+[data-testid="stAlert"] {background:#18253dcc;border:1px solid #a8c0ff22;}
+.st-key-topbar [data-testid="stHorizontalBlock"] {flex-wrap:nowrap;align-items:center;}
+.st-key-topbar [data-testid="stColumn"]:first-child {min-width:0;flex:1 1 auto;}
+.st-key-topbar [data-testid="stColumn"]:last-child {min-width:92px;flex:0 0 100px;}
+@media(max-width:640px) {
+ [data-testid="stMainBlockContainer"] {padding:1.3rem 1.1rem 6rem;}
+ [data-testid="stBottomBlockContainer"] {padding:.6rem .8rem 1rem;}
+ [data-testid="stApp"] {background-position:75% top;background-size:auto 100vh;}
+ .mp-brand {gap:8px;font-size:14px;}
+ .mp-hero {margin-top:21vh;}
+ .mp-hero h1 {font-size:39px;letter-spacing:-.5px;}
+ .mp-hero p.mp-title-cn {font-size:17px;letter-spacing:10px;margin-top:14px;}
+}
